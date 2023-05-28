@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Css/Planear-viaje.css">
+    <script src="../Js/Admin.js"></script>
+    <title>Planea tu viaje</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+
+
+        <div class="contenedor-registro-estacion">
+            <header> <h2>Registrar bicicletas y estaciones</h2></header>
+
+            <h3>Registrar Estaciones</h3>
+
+            <label for="nombre-estacion">Nombre de la estación</label>
+            <input type="text" id="nombre-estacion" name="nombre-estacion" required>
+
+            <label for="tipo-documento">Asignar Localidad</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">Usaquén</option>
+                        <option value="2">Chapinero</option>
+                        <option value="3">Teusaquillo</option>
+                        <option value="4">La Candelaria</option>
+                        <option value="5">Barrios Unidos</option>
+                        <option value="6"> Santa Fe</option>
+                    </select>
+
+                    <label for="tipo-documento">codigo de la localidad</label>
+                    <input type="text" id="celular" name="celular" required>
+
+                    <label for="tipo-documento">codigo de la Estación</label>
+                    <input type="text" id="celular" name="celular" required>
+
+                    <label for="tipo-documento">Direccion de la Estación</label>
+                    <input type="text" id="celular" name="celular" required>
+
+                    <div class="contenedor-boton">
+                        <button id="btn-guardar">Guardar</button>
+                    </div>
+        </div>
+
+
+        <div class="contenedor-registro-bici">
+
+                <h3>Registrar Biciletas</h3>
+                <div class="contenedor-bicicleta">
+                    <label for="tipo-documento">Tipo de bicicleta</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">Biclceta mecanica</option>
+                        <option value="2">Bicleta electrica</option>
+                    </select>
+
+                   
+                        <label for="tipo-documento">Codigo de la bicicleta</label>
+                        <input type="text" id="celular" name="celular" required>
+                    
+
+                    <label for="tipo-documento">Asignar Estación</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+
+                </div>
+                <div class="contenedor-boton">
+                    <button id="btn-guardar">Guardar</button>
+                </div>
+        </div>
+
+        
+            <div class="contenedor-botones">
+                <button id="btn-guardar-salir" onclick="">Guardar todo y salir</button>
+                <button id="btn-volver" onclick="volverInicio()">Volver al inicio</button>
+            </div>
+   
+    </div>
+    
+</body>
+</html>

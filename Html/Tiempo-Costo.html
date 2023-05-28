@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Css/Tiempo-Costo.css">
+    <script src="../Js/Confirmaciones.js"></script>
+    <title>Tiempo y Costo de viaje</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-tiempo">
+            <h2>Tiempo Transcurrido de viaje</h2>
+            <div class="contenedor-cronometro">
+
+            </div>
+            <div class="contenedor-info">
+
+                <h3>Si la estación de llegada esta llena debes dirigirte a otra estacion cercana para anclar la bicicleta</h3>
+                <p>recuerda que debes anclar la bicileta antes de finalizar el viaje</p>
+                <div class="contenedor-boton">
+                    <button>Finalizar Viaje</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="contenedor-costo">
+            <h2>El costo de tu viaje fue de:</h2>
+            <div class="contenedor-valor">
+                <label for="valor"></label>
+                <input type="hidden" id="valor" name="valor">
+            </div>
+            <div class="contenedor-boton">
+                <button id="btn-cancelar" onclick="irInicio()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

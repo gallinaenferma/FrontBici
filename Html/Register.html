@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Css/Register.css">
+    <script src="../Js/Login_Register.js"></script>
+    <title>Registrar usuario</title>
+</head>
+<body>
+<div class="contenedor-principal">
+
+    <div class="contenedor-form">
+        <h3>Registrar una cuenta</h3>
+        <div class="contenedor-label-input">
+
+            <!--COMBOBOX-->
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            
+
+            <label for="nombre1">Primer Nombre</label>
+            <input type="text" id="nombre1" name="nombre1" placeholder="" required>
+
+            <label for="nombre2">Segundo Nombre</label>
+            <input type="text" id="nombre2" name="nombre2" placeholder="">
+            
+
+            <label for="apellido1">Primer Apellido</label>
+            <input type="text" id="apellido1" name="apellido1" placeholder="" required>
+
+            <label for="apellido1">Primer Apellido</label>
+            <input type="text" id="apellido1" name="apellido1" placeholder="" required>
+            
+
+            <label for="fecha-nacimiento">Fecha de nacimento</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+
+
+            
+            <label for="tipo-documento">Seleccione un tipo de documento</label>
+            <select class="form-select"  aria-label="Default select example">
+                <option selected> </option>
+                <option value="1">Tarjeta de identidad (TI)</option>
+                <option value="2">Cedula de ciudadania (CC)</option>
+                <option value="3">Cedula de extranjeria (CE)</option>
+                <option value="4">Pasaporte (PA)</option>
+            </select>
+           
+
+            <label for="numero-id">Numero de documento</label>
+            <input type="text" id="numero-id" name="numero-id" placeholder="" required>
+           
+            <label for="sexo">Seleccione Sexo</label>
+            <select class="form-select"  aria-label="Default select example">
+                <option selected> </option>
+                <option value="1"> Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+            </select>
+            
+            
+            <label for="eps">Seleccione Eps</label>
+            <select class="form-select"  aria-label="Default select example">
+                <option selected> </option>
+                <option value="1"> Cafesalud EPS</option>
+                <option value="2">Coomeva EPS</option>
+                <option value="3">EPS Sura</option>
+                <option value="4">Famisanar EPS</option>
+                <option value="5">Nueva EPS</option>
+                <option value="6">Salud Total EPS</option>
+                <option value="7">Sanitas EPS</option>
+                <option value="8">EPS Compensar</option>
+                <option value="9">Aliansalud EPS</option>
+                <option value="10">Medimás EPS</option>
+                <option value="11">Otra</option>
+                
+            </select>
+            
+
+            
+
+            <label for="numero-cel">Numero de celular:</label>
+            <input type="text" id="numero-cel" name="numero-cel" placeholder="" required>
+            
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+            
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="" required>
+
+        </div>
+
+        <div class="contenedor-btn-registrar">
+            <button class="btn-registrar" type="submit" onclick="irLogin()">  Registrarse </button>
+        </div>
+        <div class="contenedor-instrucciones2">
+            <p>Si ya tienes una cuenta presiona el botón Iniciar sesion</p>
+        </div>
+        <div class="contenedor-btn-iniciar">
+            <button class="btn-iniciar" id="btn-login" onclick="irLogin()">   Iniciar sesion</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+   
+</div>
+
+</body>
+</html>

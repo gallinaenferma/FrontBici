@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Css/Planear-viaje.css">
+    <script src="../Js/Confirmaciones.js"></script>
+    <title>Planea tu viaje</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-viaje">
+            <header> <h2>¿A donde iremos hoy?</h2></header>
+            <div class="contenedor-programar">
+
+                <h3>Programa tu viaje</h3>
+                
+                <!-- COMBOBOX -->
+                <div class="contenedor-localidad">
+                    <label for="tipo-documento">Seleccione una localidad</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">Usaquén</option>
+                        <option value="2">Chapinero</option>
+                        <option value="3">Teusaquillo</option>
+                        <option value="4">La Candelaria</option>
+                        <option value="5">Barrios Unidos</option>
+                        <option value="6"> Santa Fe</option>
+                    </select>
+                </div>
+                <!-- COMBOBOX -->
+                <div class="contenedor-estacion">
+                    <label for="nombre">Selecciona una estacion:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-bicicleta">
+
+            <h3>Selecciona un tipo de bicicleta</h3>
+            <div class="contenedor-tipo">
+                <label for="bici-mecanica">Bicicleta mecanica</label>
+                <input type="checkbox" id="bici-mecanica" name="bici-mecanica" required><br><br>
+
+                <label for="bici-electrica">Bicicleta electrica</label>
+                <input type="checkbox" id="bici-electrica" name="bici-electrica" required><br><br>
+            </div>
+            <div class="contenedor-codigo">
+                <h3>Ingresa el codigo de la bicicleta</h3>
+                <input type="text" id="celular" name="celular" required>
+            </div>
+
+
+        </div>
+
+        <div class="contenedor-advertencia">
+
+            <h3>¡¡Atención!!</h3>
+
+            Recuerda que es necesario que estes en el punto fisico para desbloquear tu bicicleta
+            ,ademas contaras con unos pocos minutos para retirarla antes que empiece a correr el tiempo de tu viaje
+
+            <div class="contenedor-botones">
+                <button id="btn-viajar" onclick="iniciarViaje()">Retirar Bicicleta</button>
+                <button id="btn-cancelar" onclick="irInicio()">Volver al inicio</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

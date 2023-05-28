@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Css/Editar-perfil.css">
+    <script src="../Js/EditarPerfil.js"></script>
+    <title>Editar perfil</title>
+    
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <div class="contenedor-editar">
+            <header><h2>Editar Perfil</h2></header>
+            <div class="contenedor-form">
+                <form action="">
+                    <label for="nombre1">Primer Nombre</label>
+                    <input type="text" id="nombre1" name="nombre1" placeholder="" required>
+
+                    <label for="nombre2">Segundo Nombre</label>
+                    <input type="text" id="nombre2" name="nombre2" placeholder="">
+            
+
+                    <label for="apellido1">Segundo Apellido</label>
+                    <input type="text" id="apellido1" name="apellido1" placeholder="" required >
+
+                    <label for="apellido1">Primer Apellido</label>
+                    <input type="text" id="apellido1" name="apellido1" placeholder="" required>
+
+                    <label for="eps">Seleccione Eps</label>
+                    <select class="form-select"  aria-label="Default select example">
+                        <option selected> </option>
+                        <option value="1"> Cafesalud EPS</option>
+                        <option value="2">Coomeva EPS</option>
+                        <option value="3">EPS Sura</option>
+                        <option value="4">Famisanar EPS</option>
+                        <option value="5">Nueva EPS</option>
+                        <option value="6">Salud Total EPS</option>
+                        <option value="7">Sanitas EPS</option>
+                        <option value="8">EPS Compensar</option>
+                        <option value="9">Aliansalud EPS</option>
+                        <option value="10">Medimás EPS</option>
+                        <option value="11">Otra</option>
+                        
+                    </select>
+
+                    <label for="celular">Celular</label>
+                    <input type="text" id="celular" name="celular" required>
+                </form>
+
+            </div>
+            <div class="contenedor-botones">
+                <button class="btn-guardad" >Guardar</button>
+                <button class="btn-cancelar" id="btn-cancelar" onclick="irInicio()">Cancelar</button>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
